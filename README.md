@@ -1,1 +1,1 @@
-# criminal-justice-smart-kiosk
+# criminal-justice-kiosk
