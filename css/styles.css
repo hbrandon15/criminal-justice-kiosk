@@ -1,3 +1,9 @@
-body{
-  background-color: #F9F7F7;
+body {
+  background-color: #f9f7f7;
+}
+
+/* Homepage */
+#homepage {
+  text-align: center;
+  padding: 10%;
 }
