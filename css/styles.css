@@ -7,3 +7,12 @@ body {
   text-align: center;
   padding: 10%;
 }
+
+/* Misdemeanor courts section */
+#misdemeanor-courts {
+  text-align: center;
+}
+
+.court-btn {
+  margin: 1rem 0rem;
+}
