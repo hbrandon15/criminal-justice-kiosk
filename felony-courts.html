@@ -30,13 +30,19 @@
   <body>
     <section id="title">
       <!-- Nav Bar -->
-
       <div class="container-fluid">
         <nav class="navbar navbar-expand-lg navbar-light bg-primary-subtle">
-          <!-- TODO: #4 add harris county logo in navbar -->
-          <a class="navbar-brand" href="#"
-            >Harris County Criminal Justice Center</a
-          >
+          <a class="navbar-brand" href="index.html">
+            <img
+              src="./images/Harris-County-Logo_wb.png"
+              alt="Harris County Logo"
+              width="50"
+              height="50"
+              class="d-inline-block"
+            />
+
+            Harris County Criminal Justice Center
+          </a>
           <button
             class="navbar-toggler"
             type="button"
@@ -48,27 +54,86 @@
           >
             <span class="navbar-toggler-icon"></span>
           </button>
-
           <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">
-                  link1</a
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="misdemeanor-courts.html"
+                >
+                  Misdemeanor Courts</a
                 >
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">link2</a>
+                <a class="nav-link" href="#felony-courts.html">Felony Courts</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link">link3</a>
+                <a class="nav-link">Dockets</a>
               </li>
             </ul>
           </div>
         </nav>
-
-        <!-- Title -->
-        <div class="container"></div>
       </div>
+
+      <!-- Misdemeanor-courts  -->
+      <section class="white-section" id="misdemeanor-courts">
+        <div class="container-fluid">
+          <h1>Felony Courts</h1>
+          <h3>1201 Franklin Street, Houston, TX</h3>
+          <p>Select the court you are looking for.</p>
+          <p>Press the button below to find your court.</p>
+
+          <div class="row">
+            <div class="court-btn d-grid gap-2 col-lg-3 col-md-6 col-sm-12">
+              <button class="btn btn-dark btn-lg" type="button">Court 1</button>
+              <button class="btn btn-dark btn-lg" type="button">Court 2</button>
+              <button class="btn btn-dark btn-lg" type="button">Court 3</button>
+              <button class="btn btn-dark btn-lg" type="button">Court 4</button>
+            </div>
+            <!--End of column-->
+            <div class="court-btn d-grid gap-2 col-lg-3 col-md-6 col-sm-12">
+              <button class="btn btn-dark btn-lg" type="button">Court 5</button>
+              <button class="btn btn-dark btn-lg" type="button">Court 6</button>
+              <button class="btn btn-dark btn-lg" type="button">Court 7</button>
+              <button class="btn btn-dark btn-lg" type="button">Court 8</button>
+            </div>
+            <!--End of column-->
+
+            <div class="court-btn d-grid gap-2 col-lg-3 col-md-6 col-sm-12">
+              <button class="btn btn-dark btn-lg" type="button">Court 9</button>
+              <button class="btn btn-dark btn-lg" type="button">
+                Court 10
+              </button>
+              <button class="btn btn-dark btn-lg" type="button">
+                Court 11
+              </button>
+              <button class="btn btn-dark btn-lg" type="button">
+                Court 12
+              </button>
+            </div>
+            <!--End of column-->
+            <div class="court-btn d-grid gap-2 col-lg-3 col-md-6 col-sm-12">
+              <button class="btn btn-dark btn-lg" type="button">
+                Court 13
+              </button>
+              <button class="btn btn-dark btn-lg" type="button">
+                Court 14
+              </button>
+              <button class="btn btn-dark btn-lg" type="button">
+                Court 15
+              </button>
+              <button class="btn btn-dark btn-lg" type="button">
+                Court 16
+              </button>
+            </div>
+            <!--End of column-->
+          </div>
+          <!--end of row-->
+        </div>
+        <!--end of container fluid-->
+      </section>
+      <!--End of homepage Misdemeanor-courts-->
     </section>
   </body>
 </html>
