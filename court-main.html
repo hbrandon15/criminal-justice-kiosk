@@ -1,10 +1,9 @@
 <!DOCTYPE html>
 <html>
-  <!-- todo: #21 create start over button for court pages -->
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Misdemeanor Courts</title>
+    <title>Court Main Page</title>
 
     <!-- Google Fonts -->
     <link
@@ -31,6 +30,7 @@
   <body>
     <section id="title">
       <!-- Nav Bar -->
+
       <div class="container-fluid">
         <nav class="navbar navbar-expand-lg navbar-light bg-primary-subtle">
           <a class="navbar-brand" href="index.html">
@@ -55,6 +55,8 @@
           >
             <span class="navbar-toggler-icon"></span>
           </button>
+
+          <!-- TODO: #5 Rename navbar ID and update button target to new ID -->
           <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
               <li class="nav-item">
@@ -77,64 +79,32 @@
         </nav>
       </div>
 
-      <!-- Misdemeanor-courts  -->
+      <!-- Court Main Page -->
       <section class="white-section" id="misdemeanor-courts">
         <div class="container-fluid">
-          <h1>Misdemeanor Courts</h1>
-          <h3>1201 Franklin Street, Houston, TX</h3>
-          <p>Select the court you are looking for.</p>
+          <h1>Criminal Justice Building</h1>
+          <h4>1201 Franklin Street, Houston, TX</h4>
+          <h2>Which type of court are we looking for?</h2>
           <p>Press the button below to find your court.</p>
 
           <div class="row">
-            <div class="court-btn d-grid gap-2 col-lg-3 col-md-6 col-sm-12">
-              <button class="btn btn-dark btn-lg" type="button">Court 1</button>
-              <button class="btn btn-dark btn-lg" type="button">Court 2</button>
-              <button class="btn btn-dark btn-lg" type="button">Court 3</button>
-              <button class="btn btn-dark btn-lg" type="button">Court 4</button>
-            </div>
-            <!--End of column-->
-            <div class="court-btn d-grid gap-2 col-lg-3 col-md-6 col-sm-12">
-              <button class="btn btn-dark btn-lg" type="button">Court 5</button>
-              <button class="btn btn-dark btn-lg" type="button">Court 6</button>
-              <button class="btn btn-dark btn-lg" type="button">Court 7</button>
-              <button class="btn btn-dark btn-lg" type="button">Court 8</button>
-            </div>
-            <!--End of column-->
-
-            <div class="court-btn d-grid gap-2 col-lg-3 col-md-6 col-sm-12">
-              <button class="btn btn-dark btn-lg" type="button">Court 9</button>
+            <div class="court-btn d-grid col-lg-6 col-md-6 col-sm-12">
               <button class="btn btn-dark btn-lg" type="button">
-                Court 10
-              </button>
-              <button class="btn btn-dark btn-lg" type="button">
-                Court 11
-              </button>
-              <button class="btn btn-dark btn-lg" type="button">
-                Court 12
+                Felony Courts
               </button>
             </div>
-            <!--End of column-->
-            <div class="court-btn d-grid gap-2 col-lg-3 col-md-6 col-sm-12">
+            <div class="court-btn d-grid col-lg-6 col-md-6 col-sm-12">
               <button class="btn btn-dark btn-lg" type="button">
-                Court 13
-              </button>
-              <button class="btn btn-dark btn-lg" type="button">
-                Court 14
-              </button>
-              <button class="btn btn-dark btn-lg" type="button">
-                Court 15
-              </button>
-              <button class="btn btn-dark btn-lg" type="button">
-                Court 16
+                Misdemeanor Courts
               </button>
             </div>
-            <!--End of column-->
           </div>
           <!--end of row-->
         </div>
         <!--end of container fluid-->
       </section>
-      <!--End of homepage Misdemeanor-courts-->
+
+      <!--End of court main page div-->
     </section>
   </body>
 </html>
