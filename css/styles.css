@@ -5,7 +5,9 @@ body {
 /* Homepage */
 #homepage {
   text-align: center;
-  padding: 10%;
+}
+.homepage-btn {
+  margin: 2%;
 }
 
 /* Misdemeanor courts section */
