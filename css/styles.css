@@ -14,6 +14,10 @@ body {
 #misdemeanor-courts {
   text-align: center;
 }
+.startOver-btn {
+  text-align: right;
+  margin: 1rem 2rem;
+}
 
 .court-btn {
   margin: 1rem 0rem;
