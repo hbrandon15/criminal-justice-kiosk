@@ -2,6 +2,10 @@ body {
   background-color: #f9f7f7;
 }
 
+
+.nb_format{
+  background-color: #E3F2FD;
+}
 /* Homepage */
 #homepage {
   text-align: center;
