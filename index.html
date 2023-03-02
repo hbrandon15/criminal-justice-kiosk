@@ -17,11 +17,11 @@
       src="https://kit.fontawesome.com/32f988f34d.js"
       crossorigin="anonymous"
     ></script>
-    <!-- Bootstrap -->
+    <!-- Bootstrap CSS -->
     <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
-      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
       crossorigin="anonymous"
     />
     <!-- My CSS StyleSheet -->
@@ -29,6 +29,12 @@
   </head>
 
   <body>
+    <!--Bootstrap JS-->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"
+    ></script>
     <!-- BUG: #29 google translate api can redirect to google -->
     <!-- BUG: #30 google translate api is only affecting current page -->
     <div id="google_translate_element"></div>
@@ -50,8 +56,8 @@ cb=googleTranslateElementInit"
     <section id="title">
       <!-- Nav Bar -->
 
-      <div class="container-fluid">
-        <nav class="navbar navbar-expand-lg navbar-light bg-primary-subtle">
+      <nav class="navbar navbar-expand-lg navbar-light nb_format">
+        <div class="container-fluid">
           <a class="navbar-brand" href="index.html">
             <img
               src="./images/Harris-County-Logo_wb.png"
@@ -67,8 +73,8 @@ cb=googleTranslateElementInit"
             class="navbar-toggler"
             type="button"
             data-bs-toggle="collapse"
-            data-bs-target="#navbarTogglerDemo02"
-            aria-controls="navbarTogglerDemo02"
+            data-bs-target="#mainNavBar"
+            aria-controls="mainNavBar"
             aria-expanded="false"
             aria-label="Toggle navigation"
           >
@@ -76,7 +82,7 @@ cb=googleTranslateElementInit"
           </button>
 
           <!-- TODO: #5 Rename navbar ID and update button target to new ID -->
-          <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+          <div class="collapse navbar-collapse" id="mainNavBar">
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
               <li class="nav-item">
                 <a
@@ -95,8 +101,8 @@ cb=googleTranslateElementInit"
               </li>
             </ul>
           </div>
-        </nav>
-      </div>
+        </div>
+      </nav>
 
       <!-- Homepage -->
       <div class="white-section" id="homepage">
