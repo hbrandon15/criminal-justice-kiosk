@@ -2,9 +2,8 @@ body {
   background-color: #f9f7f7;
 }
 
-
-.nb_format{
-  background-color: #E3F2FD;
+.nb_format {
+  background-color: #e3f2fd;
 }
 /* Homepage */
 #homepage {
@@ -28,4 +27,9 @@ body {
 }
 #court-main-page {
   text-align: center;
+}
+
+/* Individual Court pages */
+#court-info {
+  text-align: left;
 }
