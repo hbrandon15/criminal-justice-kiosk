@@ -12,6 +12,9 @@ body {
 .homepage-btn {
   margin: 2%;
 }
+.time-box {
+  text-align: right;
+}
 
 /* Misdemeanor courts section */
 #misdemeanor-courts {
