@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Criminal Justice Directory</title>
+    <title>Docket</title>
 
     <!-- Google Fonts -->
     <link
@@ -93,7 +93,7 @@ cb=googleTranslateElementInit"
                 <a class="nav-link" href="felony-courts.html">Felony Courts</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="docket.ejs">Dockets</a>
+                <a class="nav-link">Dockets</a>
               </li>
             </ul>
           </div>
@@ -109,27 +109,15 @@ cb=googleTranslateElementInit"
         <div class="">
           <h1>Criminal Justice Building</h1>
           <h3>1201 Franklin Street, Houston, TX</h3>
-          <p>
-            Welcome to the Harris County Criminal Justice Center. Here you will
-            find criminal and misdemeanor courts, along with services such as
-            Pretrial Services.
-          </p>
-          <p>Press the button below to find your court.</p>
-          <div class="d-grid">
-            <a
-              href="court-main.html"
-              class="homepage-btn btn btn-dark btn-lg"
-              role="button"
-              data-bs-target="button"
-              >Start</a
-            >
-          </div>
+          <h1>Today's Docket</h1>
         </div>
         <%defList.forEach(def => { %>
-        <p><%= def.firstName %></p>
+        <p>
+          <%= def.firstName %> <%= def.lastName%>| Court: <%= def.Court %>|
+          Court Floor <%= def.CourtFloor %>
+        </p>
+
         <% })%>
-        <h1>NEED THIS ON THE GO? SCAN BELOW</h1>
-        <img src="./images/kiosk-QR.png" />
       </div>
       <!--End of homepage div-->
     </section>

@@ -39,6 +39,12 @@ async function main() {
       defList: defendants,
     });
   });
+
+  app.get("/Docket", (req, res) => {
+    res.render("docket", {
+      defList: defendants,
+    });
+  });
   app.listen(4000, function () {
     console.log("server is running");
   });
