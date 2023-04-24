@@ -1,0 +1,16 @@
+{
+  "name": "criminal-justice-kiosk",
+  "version": "1.0.0",
+  "description": "For my Senior capstone project at the University of Houston-Clear Lake, I am creating a kiosk for the Criminal Justice Center in Downtown Houston.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Brandon Hernandez",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^3.1.9",
+    "express": "^4.18.2",
+    "mongoose": "^7.0.4"
+  }
+}
