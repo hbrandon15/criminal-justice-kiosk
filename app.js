@@ -7,6 +7,8 @@ const { Double, Decimal128 } = require("bson");
 
 app.set("view engine", "ejs");
 
+app.use(express.static("public"));
+
 main().catch((err) => console.log(err));
 
 async function main() {
