@@ -49,6 +49,14 @@ async function main() {
   app.get("/court-main", (req, res) => {
     res.render("court-main", {});
   });
+
+  app.get("/felony-main", (req, res) => {
+    res.render("court-main", {});
+  });
+
+  app.get("/misdemeanor-main", (req, res) => {
+    res.render("court-main", {});
+  });
   app.listen(4000, function () {
     console.log("server is running");
   });
