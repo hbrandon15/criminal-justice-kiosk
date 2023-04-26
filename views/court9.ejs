@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Criminal Justice Directory</title>
+    <title>Court 9</title>
 
     <!-- Google Fonts -->
     <link
@@ -24,7 +24,7 @@
       crossorigin="anonymous"
     />
     <!-- My CSS StyleSheet -->
-    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="../css/styles.css" />
   </head>
 
   <body>
@@ -34,6 +34,8 @@
       integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
       crossorigin="anonymous"
     ></script>
+
+    <!-- Google Translate -->
     <div id="google_translate_element"></div>
 
     <script type="text/javascript">
@@ -44,20 +46,24 @@
         );
       }
     </script>
-
     <script
       type="text/javascript"
       src="https://translate.google.com/translate_a/element.js?
-cb=googleTranslateElementInit"
+ cb=googleTranslateElementInit"
     ></script>
+
+    <!-- Redirect -->
+    <!-- Redirect to homepage will occur after 30 seconds -->
+    <script src="js/redirect.js"></script>
+
     <section id="title">
       <!-- Nav Bar -->
 
-      <nav class="navbar navbar-expand-lg navbar-light nb_format">
-        <div class="container-fluid">
+      <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg navbar-light nb_format">
           <a class="navbar-brand" href="/">
             <img
-              src="./images/Harris-County-Logo_wb.png"
+              src="../images/Harris-County-Logo_wb.png"
               alt="Harris County Logo"
               width="50"
               height="50"
@@ -70,15 +76,15 @@ cb=googleTranslateElementInit"
             class="navbar-toggler"
             type="button"
             data-bs-toggle="collapse"
-            data-bs-target="#mainNavBar"
-            aria-controls="mainNavBar"
+            data-bs-target="#navbarTogglerDemo02"
+            aria-controls="navbarTogglerDemo02"
             aria-expanded="false"
             aria-label="Toggle navigation"
           >
             <span class="navbar-toggler-icon"></span>
           </button>
 
-          <div class="collapse navbar-collapse" id="mainNavBar">
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
               <li class="nav-item">
                 <a
@@ -90,44 +96,78 @@ cb=googleTranslateElementInit"
                 >
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="felony-main">Felony Courts</a>
+                <a class="nav-link" href="felony-main"
+                  >Felony Courts</a
+                >
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="docket">Dockets</a>
               </li>
             </ul>
           </div>
-        </div>
-      </nav>
+        </nav>
+      </div>
       <!--Displaying current time-->
       <div class="time-box">
         <h1>Time is <span id="time"> </span></h1>
         <script src="js/index.js"></script>
       </div>
+
       <!-- Homepage -->
       <div class="white-section" id="homepage">
-        <div class="">
-          <h1>Criminal Justice Building</h1>
-          <h3>1201 Franklin Street, Houston, TX</h3>
-          <p>
-            Welcome to the Harris County Criminal Justice Center. Here you will
-            find criminal and misdemeanor courts, along with services such as
-            Pretrial Services.
-          </p>
-          <p>Press the button below to find your court.</p>
-          <div class="d-grid">
+        <div>
+          <h1>Court 9</h1>
+          <div class="startOver-btn">
             <a
-              href="court-main"
-              class="homepage-btn btn btn-dark btn-lg"
+              href="misdemeanor-main"
+              class="btn btn-primary btn-lg"
               role="button"
               data-bs-target="button"
-              >Start</a
+              >Back</a
+            >
+            <a
+              href="/"
+              class="btn btn-primary btn-lg"
+              role="button"
+              data-bs-target="button"
+              >Start Over</a
             >
           </div>
+          <div class="container">
+            <div class="row align-items-start">
+              <div class="col">
+                <img
+                  src="/images/toria-f-photo.png"
+                  alt="Judge Finch"
+                  width="400"
+                  height="400"
+                  class="d-inline-block"
+                />
+                <h1>Judge Toria J. Finch</h1>
+              </div>
+              <!--end of column-->
+              <div class="col">
+                <h1>Welcome to court 9</h1>
+                <section id="court-info">
+                  <h1>Location</h1>
+                  <p>10th Floor</p>
+                  <h1>Docket Time</h1>
+                  <p>Monday-Friday starting at 9:00 AM</p>
+                  <h1>Floor Map</h1>
+                  <img
+                    src="/images/Floor10.png"
+                    alt="10th Floor"
+                    width="550"
+                    height="400"
+                  />
+                </section>
+              </div>
+              <!--end of column-->
+            </div>
+          </div>
         </div>
-        <h1>NEED THIS ON THE GO? SCAN BELOW</h1>
-        <img src="./images/kiosk-QR.png" />
       </div>
+
       <!--End of homepage div-->
     </section>
   </body>
