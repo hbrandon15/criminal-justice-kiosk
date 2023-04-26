@@ -51,11 +51,11 @@ async function main() {
   });
 
   app.get("/felony-main", (req, res) => {
-    res.render("court-main", {});
+    res.render("felony-main", {});
   });
 
   app.get("/misdemeanor-main", (req, res) => {
-    res.render("court-main", {});
+    res.render("misdemeanor-main", {});
   });
   app.listen(4000, function () {
     console.log("server is running");
