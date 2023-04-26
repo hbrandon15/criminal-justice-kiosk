@@ -9,7 +9,6 @@ app.use(express.static("public"));
 
 main().catch((err) => console.log(err));
 
-
 async function main() {
   await mongoose.connect(
     "mongodb+srv://admin-brandon:test123@cluster0.7drueob.mongodb.net/Docket"
@@ -45,6 +44,10 @@ async function main() {
     res.render("docket", {
       defList: defendants,
     });
+  });
+
+  app.get("/court-main", (req, res) => {
+    res.render("court-main", {});
   });
   app.listen(4000, function () {
     console.log("server is running");
