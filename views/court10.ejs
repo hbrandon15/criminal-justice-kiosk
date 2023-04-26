@@ -34,6 +34,8 @@
       integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
       crossorigin="anonymous"
     ></script>
+
+    <!-- Google Translate -->
     <div id="google_translate_element"></div>
 
     <script type="text/javascript">
@@ -44,34 +46,22 @@
         );
       }
     </script>
-
-    <!-- Script to redirect to home page after inactivity -->
-    <script type="text/javascript">
-      function redirect() {
-        setTimeout(myURL, 15000);
-        var result = document.getElementById("result");
-        result.innerHTML =
-          "<b> The page will redirect after delay of 5 seconds";
-      }
-
-      function myURL() {
-        document.location.href = "../index.html";
-      }
-      redirect();
-    </script>
-    <!-- End of redirect script  -->
     <script
       type="text/javascript"
       src="https://translate.google.com/translate_a/element.js?
-cb=googleTranslateElementInit"
+ cb=googleTranslateElementInit"
     ></script>
+
+    <!-- Redirect -->
+    <!-- Redirect to homepage will occur after 30 seconds -->
+    <script src="js/redirect.js"></script>
 
     <section id="title">
       <!-- Nav Bar -->
 
       <div class="container-fluid">
         <nav class="navbar navbar-expand-lg navbar-light nb_format">
-          <a class="navbar-brand" href="../index.html">
+          <a class="navbar-brand" href="/">
             <img
               src="../images/Harris-County-Logo_wb.png"
               alt="Harris County Logo"
@@ -100,18 +90,16 @@ cb=googleTranslateElementInit"
                 <a
                   class="nav-link active"
                   aria-current="page"
-                  href="../misdemeanor-courts.html"
+                  href="misdemeanor-main"
                 >
                   Misdemeanor Courts</a
                 >
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="../felony-courts.html"
-                  >Felony Courts</a
-                >
+                <a class="nav-link" href="felony-main">Felony Courts</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link">Dockets</a>
+                <a class="nav-link" href="docket">Dockets</a>
               </li>
             </ul>
           </div>
@@ -120,24 +108,23 @@ cb=googleTranslateElementInit"
       <!--Displaying current time-->
       <div class="time-box">
         <h1>Time is <span id="time"> </span></h1>
-        <script src="../index.js"></script>
+        <script src="js/index.js"></script>
       </div>
 
       <!-- Homepage -->
       <div class="white-section" id="homepage">
         <div>
-          <h1>Court 9</h1>
-          <!-- TODO: #33 Create space between court title and columns -->
+          <h1>Court 10</h1>
           <div class="startOver-btn">
             <a
-              href="../misdemeanor-courts.html"
+              href="misdemeanor-main"
               class="btn btn-primary btn-lg"
               role="button"
               data-bs-target="button"
               >Back</a
             >
             <a
-              href="../index.html"
+              href="/"
               class="btn btn-primary btn-lg"
               role="button"
               data-bs-target="button"
@@ -148,25 +135,25 @@ cb=googleTranslateElementInit"
             <div class="row align-items-start">
               <div class="col">
                 <img
-                  src="../images/toria-f-photo.png"
-                  alt="Judge Finch"
+                  src="/images/judge-jackson-photo.png"
+                  alt="Judge Jackson"
                   width="400"
                   height="400"
                   class="d-inline-block"
                 />
-                <h1>Judge Toria J. Finch</h1>
+                <h1>Judge Juanita A. Jackson</h1>
               </div>
               <!--end of column-->
               <div class="col">
-                <h1>Welcome to court 9</h1>
+                <h1>Welcome to court 10</h1>
                 <section id="court-info">
                   <h1>Location</h1>
                   <p>10th Floor</p>
                   <h1>Docket Time</h1>
-                  <p>Monday-Friday starting at 9:00 AM</p>
+                  <p>Monday-Friday starting at 10:30 AM</p>
                   <h1>Floor Map</h1>
                   <img
-                    src="../images/Floor10.png"
+                    src="/images/Floor10.png"
                     alt="10th Floor"
                     width="550"
                     height="400"

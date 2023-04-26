@@ -33,7 +33,7 @@ async function main() {
 
   const Defendant = mongoose.model("Defendant", docketSchema);
   const defendants = await Defendant.find();
-  //console.log(defendants);
+
   app.get("/", (req, res) => {
     res.render("index", {
       defList: defendants,
@@ -56,6 +56,27 @@ async function main() {
 
   app.get("/misdemeanor-main", (req, res) => {
     res.render("misdemeanor-main", {});
+  });
+
+  // Misdemeanor Court pages
+
+  app.get("/court9", (req, res) => {
+    res.render("court9", {});
+  });
+
+  app.get("/court10", (req, res) => {
+    res.render("court10", {});
+  });
+
+  // Felony Court pages
+
+  app.get("/court174", (req, res) => {
+    res.render("court174", {});
+  });
+
+  // Error pages
+  app.get("/404", (req, res) => {
+    res.render("404", {});
   });
   app.listen(4000, function () {
     console.log("server is running");
