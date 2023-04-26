@@ -2,14 +2,13 @@ const express = require("express");
 const mongoose = require("mongoose");
 const app = express();
 const ejs = require("ejs");
-const { boolean, double } = require("webidl-conversions");
-const { Double, Decimal128 } = require("bson");
 
 app.set("view engine", "ejs");
 
 app.use(express.static("public"));
 
 main().catch((err) => console.log(err));
+
 
 async function main() {
   await mongoose.connect(
