@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Criminal Justice Directory</title>
+
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700;900&family=Ubuntu&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome -->
+    <script
+      src="https://kit.fontawesome.com/32f988f34d.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+    <!-- My CSS StyleSheet -->
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+
+  <body>
+    <!--Bootstrap JS-->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"
+    ></script>
+    <div id="google_translate_element"></div>
+
+    <script type="text/javascript">
+      function googleTranslateElementInit() {
+        new google.translate.TranslateElement(
+          { pageLanguage: "en", includedLanguages: "es, en, fr,vi,zh-CN" },
+          "google_translate_element"
+        );
+      }
+    </script>
+
+    <script
+      type="text/javascript"
+      src="https://translate.google.com/translate_a/element.js?
+cb=googleTranslateElementInit"
+    ></script>
+    <section id="title">
+      <!-- Nav Bar -->
+
+      <nav class="navbar navbar-expand-lg navbar-light nb_format">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">
+            <img
+              src="./images/Harris-County-Logo_wb.png"
+              alt="Harris County Logo"
+              width="50"
+              height="50"
+              class="d-inline-block"
+            />
+
+            Harris County Criminal Justice Center
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#mainNavBar"
+            aria-controls="mainNavBar"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="mainNavBar">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="misdemeanor-courts.html"
+                >
+                  Misdemeanor Courts</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="felony-courts.html">Felony Courts</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="docket.ejs">Dockets</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!--Displaying current time-->
+      <div class="time-box">
+        <h1>Time is <span id="time"> </span></h1>
+        <script src="index.js"></script>
+      </div>
+      <!-- Homepage -->
+      <div class="white-section" id="homepage">
+        <div class="">
+          <h1>Criminal Justice Building</h1>
+          <h3>1201 Franklin Street, Houston, TX</h3>
+          <p>
+            Welcome to the Harris County Criminal Justice Center. Here you will
+            find criminal and misdemeanor courts, along with services such as
+            Pretrial Services.
+          </p>
+          <p>Press the button below to find your court.</p>
+          <div class="d-grid">
+            <a
+              href="court-main.html"
+              class="homepage-btn btn btn-dark btn-lg"
+              role="button"
+              data-bs-target="button"
+              >Start</a
+            >
+          </div>
+        </div>
+        <h1>NEED THIS ON THE GO? SCAN BELOW</h1>
+        <img src="./images/kiosk-QR.png" />
+      </div>
+      <!--End of homepage div-->
+    </section>
+  </body>
+</html>
