@@ -34,6 +34,7 @@
       integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
       crossorigin="anonymous"
     ></script>
+    <!-- Google Translate -->
     <div id="google_translate_element"></div>
 
     <script type="text/javascript">
@@ -44,18 +45,22 @@
         );
       }
     </script>
-
     <script
       type="text/javascript"
       src="https://translate.google.com/translate_a/element.js?
 cb=googleTranslateElementInit"
     ></script>
+
+    <!-- Redirect -->
+    <!-- Redirect to homepage will occur after 30 seconds -->
+    <script src="js/redirect.js"></script>
+
     <section id="title">
       <!-- Nav Bar -->
 
       <nav class="navbar navbar-expand-lg navbar-light nb_format">
         <div class="container-fluid">
-          <a class="navbar-brand" href="index.html">
+          <a class="navbar-brand" href="/">
             <img
               src="./images/Harris-County-Logo_wb.png"
               alt="Harris County Logo"
@@ -84,16 +89,16 @@ cb=googleTranslateElementInit"
                 <a
                   class="nav-link active"
                   aria-current="page"
-                  href="misdemeanor-courts.html"
+                  href="misdemeanor-main"
                 >
                   Misdemeanor Courts</a
                 >
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="felony-courts.html">Felony Courts</a>
+                <a class="nav-link" href="felony-main">Felony Courts</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link">Dockets</a>
+                <a class="nav-link" href="docket">Dockets</a>
               </li>
             </ul>
           </div>
