@@ -19,5 +19,5 @@ while true; do
 	sed -i 's/"exited_cleanly":false/"exited_cleanly":true/' /home/pi/.config/chromium/Default/Preferences
 	sed -i 's/"exit_type":"Crashed"/"exit_type":"Normal"/' /home/pi/.config/chromium/Default/Preferences
 
-	/usr/bin/chromium-browser --kiosk --noerrdialogs --disable-infobars --incognito https://hbrandon15.github.io/criminal-justice-kiosk/
+	/usr/bin/chromium-browser --kiosk --noerrdialogs --disable-infobars --incognito https://polar-atoll-27040.herokuapp.com/
 done;
