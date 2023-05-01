@@ -17,7 +17,7 @@ async function main() {
   const docketSchema = {
     firstName: String,
     lastName: String,
-    DOB: Date,
+    DOB: String,
     UScitizen: Boolean,
     Height: String,
     Weight: String,
