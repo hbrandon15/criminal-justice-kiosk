@@ -88,6 +88,10 @@ async function main() {
     res.render("court174", {});
   });
 
+  app.get("/court228", (req, res) => {
+    res.render("court228", {});
+  });
+
   // Error pages
   app.get("/404", (req, res) => {
     res.render("404", {});
