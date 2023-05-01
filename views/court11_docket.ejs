@@ -114,32 +114,24 @@ cb=googleTranslateElementInit"
         <div class="">
           <h1>Criminal Justice Building</h1>
           <h3>1201 Franklin Street, Houston, TX</h3>
-          <h1>Today's Docket</h1>
+          <h1>Court 11 Docket</h1>
 
-          <div class="row">
-            <div class="court-btn d-grid col-lg-6 col-md-6 col-sm-12">
-              <a
-                href="court228_docket"
-                class="btn btn-dark btn-lg"
-                role="button"
-                data-bs-target="button"
-                >Court 228</a
-              >
-            </div>
-            <div class="court-btn d-grid col-lg-6 col-md-6 col-sm-12">
-              <a
-                href="court11_docket"
-                class="btn btn-dark btn-lg"
-                role="button"
-                data-bs-target="button"
-                >Court 11</a
-              >
-            </div>
+      
+          <%defList.forEach(def => { %>
+          <% if (def.Court ==="11"){ %>
+       
+            <p>
+              <%= def.firstName %> <%= def.lastName%>|
+              DOB: <%= def.DOB %>|
+              Court Floor <%= def.CourtFloor %> |
+              Case: <%= def.Case %> |
+              Judge Name: <%= def.JudgeName %>
+            </p>
+          <%} %>
+      
 
-
-        </div>
+        <% })%>
       </div>
       <!--End of homepage div-->
-    </section>
   </body>
 </html>

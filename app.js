@@ -17,7 +17,7 @@ async function main() {
   const docketSchema = {
     firstName: String,
     lastName: String,
-    DOB: Date,
+    DOB: String,
     UScitizen: Boolean,
     Height: String,
     Weight: String,
@@ -40,8 +40,22 @@ async function main() {
     });
   });
 
+  // Docket pages
+
   app.get("/Docket", (req, res) => {
     res.render("docket", {
+      defList: defendants,
+    });
+  });
+
+  app.get("/court228_docket", (req, res) => {
+    res.render("court228_docket", {
+      defList: defendants,
+    });
+  });
+
+  app.get("/court11_docket", (req, res) => {
+    res.render("court11_docket", {
       defList: defendants,
     });
   });
@@ -79,10 +93,10 @@ async function main() {
     res.render("404", {});
   });
 
-  // 
-  
+  //
+
   let port = process.env.PORT;
-  if (port == null || port =="") {
+  if (port == null || port == "") {
     port = 4000;
   }
 
