@@ -40,8 +40,17 @@ async function main() {
     });
   });
 
+  // Docket pages
+
+
   app.get("/Docket", (req, res) => {
     res.render("docket", {
+      defList: defendants,
+    });
+  });
+
+  app.get("/court228_docket", (req, res) =>{
+    res.render("court228_docket",{
       defList: defendants,
     });
   });
@@ -73,6 +82,7 @@ async function main() {
   app.get("/court174", (req, res) => {
     res.render("court174", {});
   });
+
 
   // Error pages
   app.get("/404", (req, res) => {
