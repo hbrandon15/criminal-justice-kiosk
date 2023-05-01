@@ -42,15 +42,20 @@ async function main() {
 
   // Docket pages
 
-
   app.get("/Docket", (req, res) => {
     res.render("docket", {
       defList: defendants,
     });
   });
 
-  app.get("/court228_docket", (req, res) =>{
-    res.render("court228_docket",{
+  app.get("/court228_docket", (req, res) => {
+    res.render("court228_docket", {
+      defList: defendants,
+    });
+  });
+
+  app.get("/court11_docket", (req, res) => {
+    res.render("court11_docket", {
       defList: defendants,
     });
   });
@@ -83,16 +88,15 @@ async function main() {
     res.render("court174", {});
   });
 
-
   // Error pages
   app.get("/404", (req, res) => {
     res.render("404", {});
   });
 
-  // 
-  
+  //
+
   let port = process.env.PORT;
-  if (port == null || port =="") {
+  if (port == null || port == "") {
     port = 4000;
   }
 
