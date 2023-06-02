@@ -11,7 +11,7 @@ main().catch((err) => console.log(err));
 
 async function main() {
   await mongoose.connect(
-    "mongodb+srv://admin-brandon:test123@cluster0.7drueob.mongodb.net/Docket"
+    //removed database from public view
   );
 
   const docketSchema = {
